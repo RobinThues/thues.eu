@@ -6,8 +6,7 @@
 		<div class="ui two column raised stackable grid container">
 			<?php
 			$url = $_SERVER["REQUEST_URI"];
-			if (strpos($url, "/de/") !== false) {
-				echo '
+			if (strpos($url, "/de/") !== false):?>
 				<div class="column">
 					<p>
 						Alter:<br>
@@ -17,14 +16,13 @@
 				</div>
 				<div class="column">
 					<p>
-						'.(date("Y")-1992).'<br>
+						<?php echo (date("Y")-1992) ?><br>
 						Düsseldorf<br>
 						Student
 					</p>
-				</div>';
-			}
-			else {
-				echo '
+				</div>
+			<?php
+			else:?>
 				<div class="column">
 					<p>
 						Age:<br>
@@ -34,12 +32,12 @@
 				</div>
 				<div class="column">
 					<p>
-						'.(date("Y")-1992).'<br>
+						<?php echo (date("Y")-1992) ?><br>
 						Düsseldorf<br>
 						Student
 					</p>
-				</div>';
-			}?>
+				</div>
+			<?php endif;?>
 		</div>
 	</div>
 </div>

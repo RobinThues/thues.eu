@@ -4,12 +4,12 @@
 			<div class="item">
 				<?php
 				$url = $_SERVER["REQUEST_URI"];
-				if (strpos($url, "/de/") !== false) {
-					echo 'Sprache wählen:';
-				}
-				else {
-					echo 'Select your language:';
-				}?>
+				if (strpos($url, "/de/") !== false):?>
+					Sprache wählen:
+				<?php
+				else:?>
+					Select your language:
+				<?php endif;?>
 				<div class="link item" id="gerbtn">
 					<i class="de flag"></i>
 				</div>

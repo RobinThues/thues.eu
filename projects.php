@@ -15,8 +15,7 @@
 		<div id="content" class="ui very padded raised green segment">
 			<?php
 			$url = $_SERVER["REQUEST_URI"];
-			if (strpos($url, "/de/") !== false) {
-				echo '
+			if (strpos($url, "/de/") !== false):?>
 				<h3 class="ui header">Einige kleine private Projekte</h3>
 				<div class="ui list">
 					<div class="item" id="personalwebsite">
@@ -27,10 +26,8 @@
 						<h4 class="ui header">TinyTester</h4>
 						<p>Nachdem ich einen Artikel über Sicherheits- bzw. Privacy-Probleme bei TinyURL, bit.ly usw. gelesen hatte kam mir die Idee dem ganzen selbst einmal auf den Grund zu gehen. Außerdem suchte ich schon länger eine Gelegenheit mich einmal mit Python zu beschäftigen. Daraus entstand der TinyTester. Das Programm fragt TinyURL, bit.ly oder ähnliche Seiten mit zufällig ausgewürfelten URLs an und speichert sich die dahinter verlinkte Seite, falls es eine gibt. Die Erfolgsquote lag dabei mit ungefähr 10% bei TinyURL erstaunlich hoch. In Zukunft plane ich das Programm noch auf Umfragedienste wie doodle und strawpoll zu erweitern.</p>
 					</div>
-				</div>';
-			}
-			else {
-				echo '
+				</div>
+			<?php else:?>
 				<h3 class="ui header">Here you will find a list of some of my private projects</h3>
 				<div class="ui list">
 					<div class="item" id="personalwebsite">
@@ -40,10 +37,10 @@
 					<div class="item" id="tinytester">
 						<h4 class="ui header">TinyTester</h4>
 						<p>After reading news about a group testing URL shortening sites for their security I thought this could be a good way to start experimenting with python. So I wrote a small program to test random tinyurl links and save the actual link behind them if there is one. I am having about 10 percent hit chance with random links.<br>
-						I am also planing to expand the tool to survey services like strawpoll and doodle.</p>
+						I'm also planing to expand the tool to survey services like strawpoll and doodle.</p>
 					</div>
-				</div>';
-			}?>
+				</div>
+			<?php endif;?>
 		</div>
 	</div>
 	<div class="five wide column">

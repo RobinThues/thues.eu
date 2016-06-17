@@ -13,8 +13,7 @@
 			<div id="content" class="ui very padded raised green segment">
 				<?php 
 				$url = $_SERVER["REQUEST_URI"];
-				if (strpos($url, "/de/") !== false) {
-					echo '
+				if (strpos($url, "/de/") !== false):?>
 					<h2>Liste von abgeschlossenen Kursen</h2>
 					<h3>Informatik, Master</h3>
 					<ul class="ui list">
@@ -44,10 +43,8 @@
 					<h3>Studium Universale</h3>
 					<ul class="ui list">
 						<li>Grundlagen der Online-Partizipation</li>
-					</ul>';
-				}
-				else {
-					echo '
+					</ul>
+				<?php else:?>
 					<h2>List of completed courses</h2>
 					<h3>Computer Science, Master</h3>
 					<ul class="ui list">
@@ -77,8 +74,8 @@
 					<h3>Studium Universale</h3>
 					<ul class="ui list">
 						<li>Grundlagen der Online-Partizipation</li>
-					</ul>';
-				}?>
+					</ul>
+				<?php endif;?>
 				
 			</div>
 		</div>

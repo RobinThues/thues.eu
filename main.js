@@ -15,11 +15,17 @@ $(function() {
 		if(url.indexOf("/de") == -1) {
 			var lastSlash = url.lastIndexOf("/");
 			var page = url.substring(lastSlash);
-			var newurl = "http://thues.eu/de" + page;
+			var newurl;
+			if(page.length>1) {
+				newurl = "http://thues.eu/de" + page;
+			}
+			else {
+				newurl = "http://thues.eu/de/home";
+			}
 			window.location.href = newurl;
 		}
 		else {
-			alert("Dies ist bereits die deutsche Version der Seite.");
+			//alert("Dies ist bereits die deutsche Version der Seite.");
 		}
 	});
 	$('#enbtn').click(function() {
@@ -27,34 +33,34 @@ $(function() {
 ;		if(url.indexOf("/en") == -1) {
 			var lastSlash = url.lastIndexOf("/");
 			var page = url.substring(lastSlash);
-			var newurl = "http://thues.eu/en" + page;
+			var newurl;
+			if(page.length>1) {
+				newurl = "http://thues.eu/en" + page;
+			}
+			else {
+				newurl = "http://thues.eu/en/home";
+			}
 			window.location.href = newurl;
 		}
 		else {
-			alert("This is the english version.");
+			//alert("This is the english version.");
 		}
 	});
-	// Sprachen Zeugs Ende
-});
-
-/*$('.ui.form').form({
-	on: 'blur', 
-	fields: {
+	// Sprachen Zeugs Ende, Form Validation Beginn
+	$('.ui.form').form({
+	inline	: true,
+	on		: 'blur',
+	fields	: {
 		name: {
 			identifier: 'name',
 			rules: [
 				{
-				type	: 'empty',
-				prompt	: 'Please enter your name'
-				}
-			]
-		},
-		gender: {
-			identifier: 'gender',
-			rules: [
-				{
 					type	: 'empty',
-					prompt	: 'Please select a gender'
+					prompt	: 'Please enter your name.'
+				},
+				{
+					type	: 'minLength[2]',
+					prompt	: 'That not a name.'
 				}
 			]
 		},
@@ -63,13 +69,41 @@ $(function() {
 			rules: [
 				{
 					type	: 'empty',
-					prompt	: 'Please enter a username'
+					prompt	: 'Please enter your e-mail-address.'
 				},
 				{
 					type	: 'email',
-					prompt	: 'Please enter an e-mail address'
+					prompt	: 'Please enter an e-mail address.'
+				},
+				{
+					type	: 'minLength[8]',
+					prompt	: 'Please enter a valid e-mail address.'
+				}
+			]
+		},
+		subject: {
+			identifier: 'subject',
+			rules: [
+				{
+					type	: 'empty',
+					prompt	: 'Please enter a subject.'
+				}
+			]
+		},
+		message: {
+			identifier: 'message',
+			rules: [
+				{
+					type	: 'empty',
+					prompt	: 'Please enter a message.'
+				},
+				{
+					type	: 'minLength[50]',
+					prompt	: 'Your message is a little short.'	
 				}
 			]
 		}
 	}
-});*/
+	});
+});
+
