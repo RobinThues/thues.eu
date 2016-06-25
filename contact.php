@@ -5,7 +5,7 @@
 	<?php include 'header.php'; ?>
 </header>
 <?php include 'processForm.php'; ?>
-<div class="ui grid container">
+<div class="ui stackable grid container">
 	<div class="row">
 		<div class="column">
 			<!--Abstand zur Navigation-->
@@ -13,32 +13,32 @@
 	</div>
 	<div class="eleven wide column">
 		<div id="content" class="ui segements">
-			<div class="ui very padded raised green segment">
+			<div class="ui very padded raised green attached segment">
 				<?php
 				$url = $_SERVER["REQUEST_URI"];
-				if (strpos($url, "/de/") !== false)
-					echo 'Kontakt per:';
-				else
-					echo 'Contact via:';
-				?>
+				if (strpos($url, "/de/") !== false):?>
+					Kontakt per klick
+				<?php else:?>
+					Contact via click
+				<?php endif;?>
 				<br>
-				<a href="mailto:robinthues at blabla.com">
+				<a href="mailto:robinthuesATgmail.com">
 					<i class="green big mail outline link icon"></i>
 				</a>
-				<a href="skype:testing?userinfo">
+				<a href="skype:cssler?userinfo">
 					<i class="green big skype link icon"></i>
 				</a>
-				<a href="tel://0190666666">
+				<a href="tel://004917643385706">
 					<i class="green big phone link icon"></i>
 				</a>
 			</div>
 			<?php
 			if($mailsuccess):?>
-			<form class="ui very padded raised form success green segment" id="contactform" method="POST" action="http://thues.eu/sent">
+			<form class="ui very padded raised form success green attached segment" id="contactform" method="POST" action="http://thues.eu/sent">
 			<?php elseif($captchafailed):?>
-			<form class="ui very padded raised form error green segment" id="contactform" method="POST" action="http://thues.eu/sent">
+			<form class="ui very padded raised form error green attached segment" id="contactform" method="POST" action="http://thues.eu/sent">
 			<?php else:?>
-			<form class="ui very padded raised form green segment" id="contactform" method="POST" action="<?php echo $url;?>">
+			<form class="ui very padded raised form green attached segment" id="contactform" method="POST" action="<?php echo $url;?>">
 			<?php endif;?>
 				<div class="ui success message">
 					<?php

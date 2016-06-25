@@ -1,6 +1,6 @@
 <div class="ui card">
 	<div class="image">
-		<img src="/res/bob.jpg">
+		<img src="/res/squareface.jpg">
 	</div>
 	<div class="content">
 		<div class="ui two column raised stackable grid container">

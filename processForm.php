@@ -32,7 +32,7 @@ if (isset($_POST["btn"])) {
 		$mailsubject = 	htmlspecialchars($_POST['subject']);
 		$mailsender = 	htmlspecialchars($_POST['name']);
 		$mailmsg = 		htmlspecialchars($_POST['message']) . "\r\n" . $mailaddr;
-		$mailheaders = 	"From: ".$mailsender." <".$mailaddr.">" . PHP_EOL .
+		$mailheaders = 	"From: ".$mailsender." <no-reply@thues.eu>" . PHP_EOL .
 			"Reply-To: ".$mailsender." <".$mailaddr.">" . PHP_EOL .
 			"X-Mailer: PHP/" . phpversion() . PHP_EOL .
 			"MIME-Version: 1.0" . PHP_EOL .

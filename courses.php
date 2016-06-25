@@ -26,7 +26,10 @@
 					</ul>
 					<h3>Informatik, Bachelor</h3>
 					<ul class="ui list">
-						<li>Informatik I-IV</li>
+						<li>Grundlagne der Softwareentwicklung und Programmierung</li>
+						<li>Grundlagen der Technischen Informatik</li>
+						<li>Grundlagen der Algorithmen und Datenstrukturen</li>
+						<li>Grundlagen der Theoretischen Informatik</li>
 						<li>Programmierpraktikum</li>
 						<li>Rechnernetze</li>
 						<li>Betriebssysteme</li>
@@ -36,8 +39,9 @@
 					<ul class="ui list">
 						<li>Lineare Algebra I-II</li>
 						<li>Analysis I-II</li>
-						<li>Einführung in die Stochastik</li>
+						<li>Modellbildung in der Stochastik</li>
 						<li>Numerik I</li>
+						<li>Computergestützte Mathematik zur Linearen Algebra und Analysis</li>
 						<li>Einführung in die angewandte Statistik</li>
 					</ul>
 					<h3>Studium Universale</h3>
@@ -57,18 +61,22 @@
 					</ul>
 					<h3>Computer Science, Bachelor</h3>
 					<ul class="ui list">
-						<li>Informatik I-IV</li>
-						<li>Programmierpraktikum</li>
-						<li>Rechnernetze</li>
+						<li>Introduction to Programming and Software Development</li>
+						<li>Principles of Applied Computer Science</li>
+						<li>Fundamentals of Algorithms and Data Structures</li>
+						<li>Theoretical Foundations of Computer Science</li>
+						<li>Programming Project</li>
+						<li>Computer Networks</li>
 						<li>Operating Systems</li>
-						<li>Grundlagen verteilter Systeme</li>
+						<li>Foundations of Distributed Systems</li>
 					</ul>
 					<h3>Mathematics</h3>	
 					<ul class="ui list">
-						<li>Lineare Algebra I-II</li>
+						<li>Linear Algebra I-II</li>
 						<li>Analysis I-II</li>
-						<li>Einführung in die Stochastik</li>
-						<li>Numerik I</li>
+						<li>Modelling in Stochastics</li>
+						<li>Numerics I</li>
+						<li>Computational Mathematics in Linear Algebra and Analysis</li>
 						<li>Einführung in die angewandte Statistik</li>
 					</ul>
 					<h3>Studium Universale</h3>
@@ -83,6 +91,11 @@
 			<aside>
 				<?php include 'asidebox.php'; ?>
 			</aside>
+		</div>
+		<div class="row">
+			<div class="column">
+				<!--Abstand zum Footer-->
+			</div>
 		</div>
 	</div>
 	<footer>

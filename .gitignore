@@ -3,3 +3,5 @@ node_modules
 semantic
 .htaccess
 .idea
+blog
+language.php
