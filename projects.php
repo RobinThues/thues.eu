@@ -20,7 +20,7 @@
 				<div class="ui list">
 					<div class="item" id="personalwebsite">
 						<h4 class="ui header">Diese Seite - thues.eu</h4>
-						<p>Mit der Arbeit bei HHC kam auch endgültig der Bedarf mir Web-Technologien anzusehen. Also fing ich an diese Seite zu entwickeln, zuerst pur mit html, css, php und JavaScript bzw. jQuery, wobei ich sehr bald zu dem css-Framework <a href="http://semantic-ui.com/" target="_blank">semantic-ui</a> wechselte. Zuletzt kam die Zweisprachigkeit als Funktion hinzu. Die Seite befindet sich auch weiterhin in der Entwicklung. Über Feedback und Kritik würde ich mich freuen.</p>
+						<p>Mit der Arbeit bei HHC kam auch endgültig der Bedarf mir Web-Technologien anzusehen. Also fing ich an diese Seite zu entwickeln, zuerst pur mit html, css, php und JavaScript bzw. jQuery, wobei ich sehr bald zu dem css-Framework <a href="http://semantic-ui.com/" target="_blank">semantic-ui</a> wechselte. Die Seite ist inzwischen auf Deutsch und Englisch verfügbar und dank <a href="https://letsencrypt.org/">LetsEncrypt</a> über https erreichbar, samt der Umleitung von http auf https und der Unterstüztung von HSTS. Die Seite befindet sich auch weiterhin in der Entwicklung. Über Feedback und Kritik würde ich mich freuen.</p>
 					</div>
 					<div class="item" id="tinytester">
 						<h4 class="ui header">TinyTester</h4>
@@ -32,7 +32,7 @@
 				<div class="ui list">
 					<div class="item" id="personalwebsite">
 						<h4 class="ui header">This website</h4>
-						<p>With joining HHC I started learning some web stuff. I am experimenting with html, css, jQuery and the css framework semantic-ui on this website. It is still under development. By the way, I like green.</p>
+						<p>With joining HHC I started learning some web stuff. I am experimenting with html, css, jQuery and the css framework semantic-ui on this website. There is a German and an English version. The latest feature is the support for https, including the redirect from http to https and support of the HSTS header. It is still under development. By the way, I like green.</p>
 					</div>
 					<div class="item" id="tinytester">
 						<h4 class="ui header">TinyTester</h4>

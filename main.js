@@ -17,10 +17,10 @@ $(function() {
 			var page = url.substring(lastSlash);
 			var newurl;
 			if(page.length>1) {
-				newurl = "http://thues.eu/de" + page;
+				newurl = "https://thues.eu/de" + page;
 			}
 			else {
-				newurl = "http://thues.eu/de/home";
+				newurl = "https://thues.eu/de/home";
 			}
 			window.location.href = newurl;
 		}
@@ -35,10 +35,10 @@ $(function() {
 			var page = url.substring(lastSlash);
 			var newurl;
 			if(page.length>1) {
-				newurl = "http://thues.eu/en" + page;
+				newurl = "https://thues.eu/en" + page;
 			}
 			else {
-				newurl = "http://thues.eu/en/home";
+				newurl = "https://thues.eu/en/home";
 			}
 			window.location.href = newurl;
 		}

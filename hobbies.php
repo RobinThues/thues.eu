@@ -22,15 +22,15 @@
 					</div>
 					<div class="item">
 						<h4 class="ui header">Backen</h4>
-						<p>Ich liebe Kuchen, besonders wenn er Schokolade enthält. Da es jedoch schwer ist guten Kuchen zu finden fing ich an ihn selbst zu backen. Zuerst eher simple Kuchen, später wurden es Torten. Mit Begeisterung versuche ich mich immer wieder an neuen Kreationen.</p>
+						<p>Ich liebe Kuchen, besonders wenn er Schokolade enthält. Da es jedoch schwer ist guten Kuchen zu finden fing ich an ihn selbst zu backen. Zuerst eher simple Kuchen, später wurden es Torten. Mit Begeisterung versuche ich mich immer wieder an neuen Kreationen. Wem jetzt nach Bildern zumute ist, dem kann ich gern meinen Instagram-Account verlinken.</p>
 					</div>
 					<div class="item">
 						<h4 class="ui header">Nachrichten über IT und Gesellschaft</h4>
-						<p>Mich regelmäßig über Geschehnisse in der IT-Welt und Gesellschaft zu informieren gehört für mich zum Alltag und ist meine Entspannung für zwischendurch.</p>
+						<p>Mich regelmäßig über Geschehnisse in der IT-Welt und Gesellschaft zu informieren gehört für mich zum Alltag und ist meine Entspannung für zwischendurch. Besonders Neuheiten aus der IT sind immer spannend!</p>
 					</div>
 					<div class="item">
 						<h4 class="ui header">Videospiele</h4>
-						<p>Seit meiner Kindheit spiele ich mit Freunden Videospiele. Inzwischen sind dies hauptsächlich teambasierte Online-Titel, aber auch gut erzählten Geschichten verschließe ich mich nicht. Etwas zusammen spielen ist eine tolle Möglichkeit den Kontakt mit Freunden aus der Ferne aufrecht zu erhalten.</p>
+						<p>Seit meiner Kindheit spiele ich mit Freunden Videospiele. Inzwischen sind dies hauptsächlich teambasierte Online-Titel, aber auch gut erzählten Geschichten verschließe ich mich nicht. Etwas zusammen spielen ist eine tolle Möglichkeit den Kontakt mit Freunden aus der Ferne aufrecht zu erhalten.  Außerdem fördern die meisten Titel heutzutage Teamgeist und logisches Denken.</p>
 					</div>
 				</div>
 			<?php else:?>
