@@ -1,4 +1,9 @@
-<?php 
+<?php
+
+header('X-Frame-Options: SAMEORIGIN');
+header('Content-Security-Policy: default-src https:');
+header('X-Content-Type-Options: nosniff');
+header('X-Xss-Protection: 1; mode=block');
 if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off") {
     $redirect = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
     header('HTTP/1.1 301 Moved Permanently');
@@ -6,17 +11,25 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off") {
     exit();
 }
 else {
-	header("strict-transport-security: max-age=604800");
-}?>
+	header("strict-transport-security: max-age=10886401; includeSubDomains; preload");
+}
+$filehandle = fopen("visitors", "a");
+fwrite($filehandle, 
+	"Remote IP: " . $_SERVER["REMOTE_ADDR"] . 
+	", Request URI: " . $_SERVER[REQUEST_URI] . 
+	", Time: " . date('m/d/Y h:i:s a', time()) . PHP_EOL);
+fclose($filehandle);
+?>
 
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
 	<title>Robin Thüs</title>
 	<meta name="author" content="Robin Thüs">
-	<meta name="description" content="Robin Thüs' first personal web page.">
+	<meta name="description" content="I am a computer science student. On this site are ome of my qualifications and contact information.">
 	<meta charset="UTF-8">
-	<meta name="robots" content="noindex, nofollow">
+	<meta name="robots" content="index, nofollow">
+	<meta name="keywords" content="computer science student robin thues thüs HHC CV university courses informatik">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="https://thues.eu/res/rt.png">
 	<link rel="stylesheet" type="text/css" href="https://thues.eu/styles.css">

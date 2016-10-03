@@ -42,7 +42,6 @@
 						<li>Modellbildung in der Stochastik</li>
 						<li>Numerik I</li>
 						<li>Computergestützte Mathematik zur Linearen Algebra und Analysis</li>
-						<li>Einführung in die angewandte Statistik</li>
 					</ul>
 					<h3>Studium Universale</h3>
 					<ul class="ui list">
@@ -77,7 +76,6 @@
 						<li>Modelling in Stochastics</li>
 						<li>Numerics I</li>
 						<li>Computational Mathematics in Linear Algebra and Analysis</li>
-						<li>Einführung in die angewandte Statistik</li>
 					</ul>
 					<h3>Studium Universale</h3>
 					<ul class="ui list">

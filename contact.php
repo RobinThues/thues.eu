@@ -43,7 +43,7 @@
 				<div class="ui success message">
 					<?php
 					if (strpos($url, "/de/") !== false):?>
-						<div class="hader">Senden erfolgreich</div>
+						<div class="header">Senden erfolgreich</div>
 						<p>Deine Nachricht wurde abgeschickt.</p>
 					<?php else:?>
 						<div class="header">Form completed</div>
