@@ -22,9 +22,8 @@
 				</p>
 			<?php
 			else: ?>
-				<p>From <a href="http://www.duesseldorf.de/de/eng/index.shtml">Düsseldorf</a>, Germany.<br>
-				Born in 1992.<br>
-				Went so school at <a href="http://www.lgbk.de/">Lessing Gymnasium und Berufskolleg</a> and chose computer science and mathematics as my advanced courses.<br>
+				I was born 1992 in <a href="http://www.duesseldorf.de/de/eng/index.shtml">Düsseldorf</a>, Germany and I am living there ever since.<br>
+				I went so school at <a href="http://www.lgbk.de/">Lessing Gymnasium und Berufskolleg</a>. From the beginning on I liked mathematics most. During the last years of school I chose computer science and mathematics as my advanced courses.<br>
 				After school I started studying computer science at <a href="http://www.uni-duesseldorf.de/home/startseite.html">Heinrich-Heine-University</a> and I'm planning on graduating as Master of Science in Computer Science there. My focus is on network technologies.<br>
 				In 2016 I also started working at <a href="http://hhc-duesseldorf.de/">Heinrich-Heine-Consulting e.V.</a> as an IT Consultant.
 				</p>
