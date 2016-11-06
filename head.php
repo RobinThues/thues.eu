@@ -1,5 +1,4 @@
 <?php
-
 header('X-Frame-Options: SAMEORIGIN');
 header('Content-Security-Policy: default-src https:');
 header('X-Content-Type-Options: nosniff');
@@ -13,12 +12,6 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off") {
 else {
 	header("strict-transport-security: max-age=10886401; includeSubDomains; preload");
 }
-$filehandle = fopen("visitors", "a");
-fwrite($filehandle, 
-	"Remote IP: " . $_SERVER["REMOTE_ADDR"] . 
-	", Request URI: " . $_SERVER[REQUEST_URI] . 
-	", Time: " . date('m/d/Y h:i:s a', time()) . PHP_EOL);
-fclose($filehandle);
 ?>
 
 <!DOCTYPE html>
@@ -38,4 +31,5 @@ fclose($filehandle);
 	<link rel="stylesheet" type="text/css" href="https://thues.eu/semantic/dist/semantic.min.css">
 	<script src="https://thues.eu/semantic/dist/semantic.min.js"></script>
 	<script type="text/javascript" src="https://thues.eu/main.js"></script>
+	<?php include_once('analyticstracking.php'); ?>
 </head>
